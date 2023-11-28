@@ -1,0 +1,60 @@
+﻿<Window x:Class="LR11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LR11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0" Fill="Black"/>
+        <Label Content="Записник" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" FontFamily="Impact" Foreground ="White" />
+        <Label x:Name="date" Content="Остання зміна:" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" FontFamily="Impact" Foreground ="White" />
+        <Button Name="del" Content="del" FontSize="8" FontFamily="italic" HorizontalAlignment="Left" Width="30" Margin="0,0,0,58" Click="del_Click"/>
+        <Label x:Name="notification" Content="Нагадування" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="20" FontFamily="Impact" Foreground ="White" />
+        <Rectangle Grid.Row="3" Fill="Black" />
+        <ListBox x:Name="taskList" Grid.Row="1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Grid Grid.Row = "3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ComboBox Name="myComboBox" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="300" Background="White" FontSize="30" FontFamily="Impact" Foreground ="Black" >
+                <Label x:Name="textType1" Grid.Column="0" Content="Додати завдання" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontFamily="Impact" Foreground ="Black"/>
+                <Label x:Name="textType2" Grid.Column="0" Content="Додати запис" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontFamily="Impact" Foreground ="Black"/>
+                <Label x:Name="textType3" Grid.Column="0" Content="Додати нагадування" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontFamily="Impact" Foreground ="Black"/>
+            </ComboBox>
+            <TextBox x:Name="newInfo" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Height="50"/>
+            <Button x:Name="saveBtn" Grid.Column="2" Content="Зберегти" FontFamily="Impact" FontSize="30" Width="300" Height="50" Background="White" Click="saveBtn_Click"/>
+        </Grid>
+        <ListBox x:Name="textRecords" Grid.Row="2">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+
+    </Grid>
+</Window>

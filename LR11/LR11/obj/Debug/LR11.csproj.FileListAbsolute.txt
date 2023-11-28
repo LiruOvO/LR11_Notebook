@@ -1,0 +1,15 @@
+D:\Урочки\ООП\ЛР11\LR11\LR11\bin\Debug\LR11.exe.config
+D:\Урочки\ООП\ЛР11\LR11\LR11\bin\Debug\LR11.exe
+D:\Урочки\ООП\ЛР11\LR11\LR11\bin\Debug\LR11.pdb
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\LR11.csproj.AssemblyReference.cache
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\App.g.cs
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\LR11_MarkupCompile.cache
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\LR11_MarkupCompile.lref
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\LR11.g.resources
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\LR11.Properties.Resources.resources
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\LR11.csproj.GenerateResource.cache
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\LR11.csproj.CoreCompileInputs.cache
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\LR11.exe
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\LR11.pdb
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\MainWindow.g.cs
+D:\Урочки\ООП\ЛР11\LR11\LR11\obj\Debug\MainWindow.baml
